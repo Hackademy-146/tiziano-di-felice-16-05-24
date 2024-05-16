@@ -12,8 +12,13 @@ appear.addEventListener('click', () => {
 })
 
 color.addEventListener('click', () => {
+    let r = Math. floor (Math. random () * (255 - 0 + 1) + 0)
+    let g = Math. floor (Math. random () * (255 - 0 + 1) + 0)
+    let b = Math. floor (Math. random() * (255 - 0 + 1) + 0)
+
+
     paragraphs.forEach( p => {
-        p.classList.toggle('color-blue');
+        p.style.color = `rgb(${r}, ${g}, ${b})`
     })
 })
 
